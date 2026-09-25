@@ -1,14 +1,7 @@
-import { Page, Locator } from '@playwright/test';
+import { Page } from "@playwright/test";
 
 export class LoginPage {
-  readonly page: Page;
+  constructor(private page: Page) {}
 
-  // এখানে পরে locator গুলো লিখবেন
-
-  constructor(page: Page) {
-    this.page = page;
-    // এখানে locator গুলো initialize করবেন
-  }
-
-  // এখানে পরে methods লিখবেন (যেমন: goto, login, getErrorMessage ইত্যাদি)
+  // Locators will go here.
 }
